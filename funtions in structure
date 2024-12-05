@@ -1,0 +1,38 @@
+// structure using functions
+//displaying a name and age of the student 
+#include <stdio.h>
+struct person
+{
+   char name[50];
+   int age;
+};
+
+void display(struct person s);
+
+void main()
+{
+   struct person s1;
+
+   printf("Enter name: ");
+   scanf("%s", s1.name);
+   printf("Enter age: ");
+   scanf("%d", &s1.age);
+   display(s1);
+
+}
+void display(struct person s)
+{
+   printf("\nList of details\n");
+   printf("Name: %s", s.name);
+   printf("\nAge: %d", s.age);
+}
+
+___________________________________________
+OUTPUT
+Enter name: Mithuna
+Enter age: 19
+
+List of details
+Name: Mithuna
+Age: 19
+_____________________________________________
