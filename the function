@@ -1,0 +1,29 @@
+#include <stdio.h>
+struct person
+{
+   char name[50];
+   int age;
+};
+
+void display(struct person X);
+
+void main()
+{
+   struct person s[3];
+   
+  for(int i=0;i<3;i++){
+   printf("Enter name: ");
+   scanf("%s",&s[i].name);
+   printf("Enter age: ");
+   scanf("%d",&s[i].age);
+  }
+  for(int j=0;j<3;j++){
+   display(s[j]);
+  }
+}
+void display(struct person X)
+{
+   for(int j=0;j<3;j++){
+   printf("Enter name: %s",X.name);
+   printf("Enter age: %d",X.age); }
+}
